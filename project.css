@@ -45,8 +45,11 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block
 }
-
-audio, canvas, progress, video {
+canvas{
+  width: 0;
+  height: 0
+}
+audio, progress, video {
   display: inline-block;
   vertical-align: baseline
 }
@@ -135,13 +138,16 @@ figure {
 }
 
 img {
-  vertical-align: middle
+  /* vertical-align: middle */
+  width:100%;
+  height:auto;
 }
 
-.overview .fp-tableCell {
-    vertical-align: bottom}
+
 .text-bottom{
 vertical-align: middle;
+width:50%;
+margin: auto;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
@@ -1143,11 +1149,13 @@ video::-webkit-media-controls-start-playback-button {
   background-image: url(img/threeMiner.jpg);
   background-size: cover;
 }
-.main-content1{
+/* .main-content1{
   background: black;
   background-image: url(img/threeMiner1.jpg);
-  background-repeat: no-repeat;
-}
+
+
+
+} */
 
 .cover_title {
   margin-bottom: .75em
@@ -1274,9 +1282,6 @@ section {
   background: #000
 }
 
-.section .canvas_container {
-  position: absolute;
-}
 
 
 
@@ -1331,9 +1336,10 @@ section {
   color: #d2a90a
 }
 
-/* .overview .fp-tableCell {
+.overview .fp-tableCell {
   vertical-align: top
-} */
+
+}
 
 .overview p {
   line-height: 1.25;
@@ -1342,12 +1348,14 @@ section {
 
 .overview img {
   margin-bottom: .5em
+  width:100%;
+  height: auto;
 }
 
-.overview .img-scope {
+/* .overview .img-scope {
   width: 50%;
   margin-left: 25%
-}
+} */
 
 .component .slide {
   padding-right: 15px
@@ -1586,9 +1594,9 @@ section {
     margin-bottom: .25em
   }
 
-  .canvas_container {
+  /* .canvas_container {
     width: 90%
-  }
+  } */
 
   .spectrum {
     width: 90%
