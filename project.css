@@ -1149,6 +1149,21 @@ video::-webkit-media-controls-start-playback-button {
   background-image: url(img/threeMiner.jpg);
   background-size: cover;
 }
+.vertical{
+  background: black;
+  background-image: url(img/vertical.jpg);
+  width:100%;
+  background-repeat: no-repeat;
+
+
+}
+.center-right{
+  position: absolute;
+  width:25%;
+  top:40%;
+  left:65%
+
+}
 /* .main-content1{
   background: black;
   background-image: url(img/threeMiner1.jpg);

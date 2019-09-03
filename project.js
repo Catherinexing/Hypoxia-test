@@ -63,7 +63,7 @@ function telescopeInit() {
     var n, i = t.getAttribute("data-pattern");
     n = s < 420 ? i.replace("{{size}}", "400") : i.replace("{{size}}", "800"), $(t).attr("data-src", n)
   }), $(document).ready(function() {
-    i = new e("Lynx"), o = new e("HabEx"), t(i), t(o), $("article").fullpage({
+    i = new e("Lynx"),  t(i),  $("article").fullpage({
       navigation: !0,
       navigationPosition: "right",
       lazyLoading: !0,
